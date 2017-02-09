@@ -1,3 +1,36 @@
+## BEFORE YOU MAKE A PULL REQUEST/change:
+
+
+0)Add Upstream. ONLY DO THIS ONE TIME:
+```{r, engine='zsh', count_lines}
+git remote add upstream  https://github.com/vogtn/markReact.git
+```
+
+1)Pull latest commits from mine to your local version. This creates a new branch locally called "upstream/master"
+```{r, engine='zsh', count_lines}
+git fetch upstream
+```
+
+2)Change to master branch:
+```{r, engine='zsh', count_lines}
+git checkout master
+```
+3)Merge Changes
+```{r, engine='zsh', count_lines}
+git merge upstream/master
+```
+4)commit changes
+```{r, engine='zsh', count_lines}
+git commit -m "message" -a
+```
+5)push
+```{r, engine='zsh', count_lines}
+git push origin master
+```
+6)create pull request
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -911,7 +944,7 @@ This feature is experimental and still [has major usage issues](https://github.c
 
 ### Editor Integration
 
-If you use [Visual Studio Code](https://code.visualstudio.com), there is a [Jest extension](https://github.com/orta/vscode-jest) which works with Create React App out of the box. This provides a lot of IDE-like features while using a text editor: showing the status of a test run with potential fail messages inline, starting and stopping the watcher automatically, and offering one-click snapshot updates. 
+If you use [Visual Studio Code](https://code.visualstudio.com), there is a [Jest extension](https://github.com/orta/vscode-jest) which works with Create React App out of the box. This provides a lot of IDE-like features while using a text editor: showing the status of a test run with potential fail messages inline, starting and stopping the watcher automatically, and offering one-click snapshot updates.
 
 ![VS Code Jest Preview](https://cloud.githubusercontent.com/assets/49038/20795349/a032308a-b7c8-11e6-9b34-7eeac781003f.png)
 
